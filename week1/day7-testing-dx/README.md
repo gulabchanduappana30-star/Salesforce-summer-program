@@ -36,13 +36,6 @@ Types of Asynchronous Apex:
 
 Used for background execution.
 
-Example:
-
-```apex
-@future
-public static void updateRecords() {
-}
-```
 
 Uses:
 
@@ -61,14 +54,6 @@ Features:
 - Supports job chaining
 - Supports complex objects
 - Better monitoring
-
-Example:
-
-```apex
-System.enqueueJob(new MyQueueableClass());
-```
-
----
 
 ### 3. Batch Apex
 
@@ -98,17 +83,6 @@ Example:
 - Weekly maintenance tasks
 - Automatic record updates
 
-Example code:
-
-```apex
-System.schedule(
-'DailyJob',
-cronExpression,
-new DailyProcessor()
-);
-```
-
----
 
 ## 3. What is Salesforce DX?
 
@@ -125,13 +99,7 @@ Command line tool used for:
 - Running tests
 - Deployments
 
-Example:
 
-```bash
-sf org login web
-```
-
----
 
 ### Scratch Org
 
